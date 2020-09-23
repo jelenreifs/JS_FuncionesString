@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 08</title>
+</head>
+
+<body>
+    <h1>Ejercicio 08</h1>
+
+    <p>
+        Escriba un programa que pida al usuario una suma y que te devuelva por consola los números que forman parte de
+        la operación.
+        Por ejemplo: 23+56 → el programa devolverá 23 y 56.
+
+    </p>
+
+    <script>
+
+        let resultadoSuma = parseInt(window.prompt("Introduce un número "));
+
+        /*  Número aleatorio entre 1 y el número introducido por el usuario */
+        /*  Math.floor() : Devuelve el máximo entero menor o igual a un número. */
+
+        let sumando1 = Math.floor((Math.random() * resultadoSuma) + 1);
+        let sumando2 = resultadoSuma - sumando1;
+
+        console.log(resultadoSuma + '=' + sumando1 + '+' + sumando2);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 06</title>
+</head>
+
+<body>
+    <h1>Ejercicio 06</h1>
+
+    <p>
+        Escribe un programa que dada una palabra en minúsculas, muestre en la consola la mitad de la palabra en
+        minúsculas y la otra mitad en mayúsculas.
+    </p>
+
+    <script>
+
+        let palabra = "bootcamp";
+
+        let mitad = palabra.length / 2;
+        let trozo1 = palabra.substring(0, mitad);
+        let trozo1Mayuscula = trozo1.toLocaleUpperCase();
+
+        let palabraModificada = trozo1Mayuscula.substring(trozo1, trozo1Mayuscula);
+
+        console.log(palabraModificada);
+
+
+
+    /*     let mitad = string.substring(0, string.length / 2);
+        let mitadMayus = mitad.toUpperCase();
+        let palabraAMostrar = string.replace("BOOT", mitadMayus);
+        
+        console.log(palabraAMostrar);
+ */
+
+    </script>
+
+</body>
+
+</html>
